@@ -1,0 +1,205 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263445;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #173b57;
+    color: white;
+    padding: 24px 7%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin: 6px 0 20px;
+    color: #dce8f1;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #2c5877;
+}
+
+/* Main content */
+main {
+    width: 86%;
+    max-width: 1050px;
+    margin: 35px auto;
+}
+
+section {
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    color: #173b57;
+    margin-top: 0;
+}
+
+#home {
+    text-align: center;
+    padding: 50px 30px;
+    border-top: 5px solid #e8a23a;
+}
+
+#home h2 {
+    font-size: 30px;
+    color: #173b57;
+}
+/* Application form */
+form {
+    max-width: 650px;
+    margin-top: 22px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input:not(.form-control),
+textarea:not(.form-control) {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5df;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 15px;
+    background-color: white;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #8bbce0;
+    border-color: #246b9b;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button:not(.btn) {
+    background-color: #e8a23a;
+    color: #172d40;
+    border: none;
+    border-radius: 6px;
+    padding: 13px 22px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:not(.btn):hover {
+    background-color: #d89025;
+}
+
+/* Employers section */
+#employers {
+    border-left: 5px solid #e8a23a;
+}
+
+/* Footer */
+footer {
+    background-color: #173b57;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    header {
+        padding: 22px 5%;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    main {
+        width: 92%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #home h2 {
+        font-size: 24px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+.btn-primary {
+    background-color: #e8a23a;
+    border-color: #e8a23a;
+    color: #172d40;
+}
+
+.btn-primary:hover {
+    background-color: #d89025;
+    border-color: #d89025;
+    color: #172d40;
+}
+
+.btn-outline-primary {
+    color: #173b57;
+    border-color: #173b57;
+}
+
+.btn-outline-primary:hover {
+    background-color: #173b57;
+    border-color: #173b57;
+    color: white;
+}
